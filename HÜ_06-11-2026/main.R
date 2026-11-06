@@ -1,0 +1,5 @@
+library(tidyverse)
+library(readxl)
+daten <- read_excel("data/Zugversuch.xlsx")
+write_csv(daten, "output/Zugversuch.csv")
+kontrolle <- read_csv("output/Zugversuch.csv")
